@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Booking Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #fff;
+            border-bottom: 1px solid #ccc;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            header .search-options {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+            }
+
+                header .search-options div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                    header .search-options div span {
+                        font-size: 12px;
+                        color: #666;
+                    }
+
+                    header .search-options div strong {
+                        font-size: 14px;
+                    }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .bus-image {
+            width: 40%;
+            text-align: center;
+        }
+
+            .bus-image img {
+                max-width: 100%;
+                border-radius: 10px;
+            }
+
+        .bus-options {
+            width: 50%;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+            .bus-options h3 {
+                margin-bottom: 20px;
+                display: flex;
+                justify-content: space-between;
+            }
+
+        .bus-option {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f9f9f9;
+            padding: 10px 20px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+            .bus-option button {
+                background-color: #28a745;
+                color: #fff;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+                .bus-option button:hover {
+                    background-color: #218838;
+                }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+            footer a {
+                color: white;
+                text-decoration: none;
+                margin: 0 10px;
+            }
+    </style>
+</head>
+
+<body>
+    <header>
+        
+        <button style="background-color: #4CAF50; color: white; padding: 10px 15px; border: none; border-radius: 5px;">New Search</button>
+        <div class="search-options">
+            <div>
+                <span> <b> <i class="bi bi-calendar3"></i> Arrival Date</b></span>
+                <strong>12-12-2024</strong>
+            </div>
+            <div>
+                <span><b> <i class="bi bi-calendar3"></i> Travel Date</b></span>
+                <strong>12-12-2024</strong>
+            </div>
+            <div>
+                <span><b><i class="bi bi-telegram"></i> Destination</b></span>
+                <strong>Giza</strong>
+            </div>
+            <div>
+                <span><b> <i class="bi bi-telegram"></i>Travel From</b></span>
+                <strong>Marsa Matrouh</strong>
+            </div>
+            <div>
+                <span><b><i class="bi bi-people-fill"></i> Number Of Passengers</b></span>
+                <strong>23</strong>
+            </div>
+            <div>
+                <a href="/Home/Project_1" class="btn btn-success"> Next Page <i class="bi bi-arrow-right"></i></a>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="bus-image">
+            <img src="~/2.jpeg" alt="Bus Image">
+        </div>
+        <div class="bus-options">
+            <h3>
+                <span>Travel to Giza</span>
+                <span><i class="bi bi-bus-front-fill"></i></span>
+                <button> <i class="bi bi-arrow-left"></i> Going Trip</button>
+            </h3>
+            <div class="bus-option">
+                <div>
+                    <button>Choose</button>
+                    <span>To Giza</span>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-success">Business Bus</button>
+                </div>
+                <div>From Marasy 1:00 AM</div>
+            </div>
+            <div class="bus-option">
+                <div>
+                    <button>Choose</button>
+                    <span>To Giza</span>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-success">Economy Bus</button>
+                </div>
+                <div>From Marasy 1:30 AM</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+        <a href="#">FAQ</a>
+        <a href="#">Policy</a>
+    </footer>
+</body>
+
+</html>
+
